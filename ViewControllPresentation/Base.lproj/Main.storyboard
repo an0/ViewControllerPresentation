@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,111 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewControllPresentation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5X-Y0-QvE">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="fullScreen" id="e9E-D7-db3">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="GJF-XD-qMh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="pageSheet" id="4wf-Wb-qjD">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="BSy-xk-OvX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="formSheet" id="fhL-wZ-ERH">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="qvY-6U-Ugp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="popover" id="s5t-0c-xrO">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="XoV-6e-NUs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfm-VU-STI">
+                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="overFullScreen" id="rk4-ve-ylW">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="R7q-Ok-i4G"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="automatic" id="w7Z-1d-Dqf">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="cf9-dn-bX1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="popover!" id="jXH-L4-HIX">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="l62-kn-XjL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixH-3l-dcV">
+                                <rect key="frame" x="0.0" y="725" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="currentContext" id="2gb-05-NrL">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="jKy-ue-koe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="overCurrentContext" id="WNF-ch-wIc">
+                                        <connections>
+                                            <action selector="present:" destination="BYZ-38-t0r" id="hHW-u9-iXX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwH-VF-efX">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo4-pq-hwk">
+                                <rect key="frame" x="340" y="44" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IM1-Fd-6OH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MwH-VF-efX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Ve-TD-0N2"/>
+                            <constraint firstItem="ixH-3l-dcV" firstAttribute="trailing" secondItem="Nfm-VU-STI" secondAttribute="trailing" id="5Cn-PU-3iJ"/>
+                            <constraint firstItem="s5X-Y0-QvE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KnQ-Xg-XQc"/>
+                            <constraint firstItem="Lo4-pq-hwk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kwf-jM-rHS"/>
+                            <constraint firstItem="ixH-3l-dcV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MwH-VF-efX" secondAttribute="bottom" symbolic="YES" id="OJA-Vc-Hwx"/>
+                            <constraint firstItem="s5X-Y0-QvE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sig-yR-Eop"/>
+                            <constraint firstItem="s5X-Y0-QvE" firstAttribute="top" secondItem="Nfm-VU-STI" secondAttribute="bottom" id="Uak-uF-icH"/>
+                            <constraint firstItem="MwH-VF-efX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="750" id="fsY-SY-kc0"/>
+                            <constraint firstItem="Lo4-pq-hwk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hNc-aI-wNm"/>
+                            <constraint firstItem="Nfm-VU-STI" firstAttribute="trailing" secondItem="s5X-Y0-QvE" secondAttribute="trailing" id="hln-6c-A1e"/>
+                            <constraint firstAttribute="trailing" secondItem="s5X-Y0-QvE" secondAttribute="trailing" id="kGc-Mf-ZZ0"/>
+                            <constraint firstItem="ixH-3l-dcV" firstAttribute="leading" secondItem="Nfm-VU-STI" secondAttribute="leading" id="l76-vq-4fu"/>
+                            <constraint firstItem="ixH-3l-dcV" firstAttribute="leading" secondItem="s5X-Y0-QvE" secondAttribute="leading" id="pE1-FM-IRF"/>
+                            <constraint firstItem="Nfm-VU-STI" firstAttribute="top" secondItem="ixH-3l-dcV" secondAttribute="bottom" id="sK6-Ny-6Bf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="MwH-VF-efX" id="9wJ-Z8-awY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
 </document>
