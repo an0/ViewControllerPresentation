@@ -42,7 +42,8 @@ class ViewController: UIViewController {
         let navController = UINavigationController(rootViewController: vc)
         navController.modalPresentationStyle = UIModalPresentationStyle(sender.title!)!
         if navController.modalPresentationStyle == .popover {
-            navController.popoverPresentationController?.barButtonItem = sender
+            navController.popoverPresentationController?.sourceView = view
+            navController.popoverPresentationController?.sourceRect = CGRect(x: 20, y: view.bounds.midY - 10, width: 20, height: 20)
             if sender.title!.hasSuffix("!") {
                 navController.popoverPresentationController?.delegate = self
             }
