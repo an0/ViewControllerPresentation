@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ViewControllPresentation
+//  ViewControllerPresentation
 //
 //  Created by Ling Wang on 6/18/19.
 //  Copyright © 2019 Moke. All rights reserved.
