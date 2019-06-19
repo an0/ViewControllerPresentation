@@ -81,25 +81,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo4-pq-hwk">
-                                <rect key="frame" x="340" y="44" width="54" height="30"/>
-                                <state key="normal" title="Dismiss"/>
-                                <connections>
-                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IM1-Fd-6OH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="MwH-VF-efX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Ve-TD-0N2"/>
                             <constraint firstItem="ixH-3l-dcV" firstAttribute="trailing" secondItem="Nfm-VU-STI" secondAttribute="trailing" id="5Cn-PU-3iJ"/>
                             <constraint firstItem="s5X-Y0-QvE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KnQ-Xg-XQc"/>
-                            <constraint firstItem="Lo4-pq-hwk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kwf-jM-rHS"/>
                             <constraint firstItem="ixH-3l-dcV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MwH-VF-efX" secondAttribute="bottom" symbolic="YES" id="OJA-Vc-Hwx"/>
                             <constraint firstItem="s5X-Y0-QvE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sig-yR-Eop"/>
                             <constraint firstItem="s5X-Y0-QvE" firstAttribute="top" secondItem="Nfm-VU-STI" secondAttribute="bottom" id="Uak-uF-icH"/>
                             <constraint firstItem="MwH-VF-efX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="750" id="fsY-SY-kc0"/>
-                            <constraint firstItem="Lo4-pq-hwk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hNc-aI-wNm"/>
                             <constraint firstItem="Nfm-VU-STI" firstAttribute="trailing" secondItem="s5X-Y0-QvE" secondAttribute="trailing" id="hln-6c-A1e"/>
                             <constraint firstAttribute="trailing" secondItem="s5X-Y0-QvE" secondAttribute="trailing" id="kGc-Mf-ZZ0"/>
                             <constraint firstItem="ixH-3l-dcV" firstAttribute="leading" secondItem="Nfm-VU-STI" secondAttribute="leading" id="l76-vq-4fu"/>

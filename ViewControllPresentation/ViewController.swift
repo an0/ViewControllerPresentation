@@ -17,16 +17,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.random
-    }
+        switch presentingViewController {
+        case let vc as ViewController:
+            level = vc.level + 1
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        case let navController as UINavigationController:
+            level = (navController.topViewController as! ViewController).level + 1
 
-        if let presentingVC = presentingViewController as? ViewController {
-            level = presentingVC.level + 1
+        default:
+            level = 0
         }
-        label.text = "\(level). \(modalPresentationStyle.description)"
+
+        title = "\(level). \((navigationController?.modalPresentationStyle ?? .none).description)"
+        label.text = title
+        view.backgroundColor = UIColor.random
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismiss(_:)))
     }
     
     @IBAction func present(_ sender: UIBarButtonItem) {
@@ -34,14 +39,15 @@ class ViewController: UIViewController {
             return
         }
 
-        vc.modalPresentationStyle = UIModalPresentationStyle(sender.title!)!
-        if vc.modalPresentationStyle == .popover {
-            vc.popoverPresentationController?.barButtonItem = sender
+        let navController = UINavigationController(rootViewController: vc)
+        navController.modalPresentationStyle = UIModalPresentationStyle(sender.title!)!
+        if navController.modalPresentationStyle == .popover {
+            navController.popoverPresentationController?.barButtonItem = sender
             if sender.title!.hasSuffix("!") {
-                vc.popoverPresentationController?.delegate = self
+                navController.popoverPresentationController?.delegate = self
             }
         }
-        present(vc, animated: true)
+        present(navController, animated: true)
     }
 
     @IBAction func dismiss(_ sender: Any) {
