@@ -35,10 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func present(_ sender: UIBarButtonItem) {
-        guard let vc = storyboard?.instantiateInitialViewController() else {
-            return
-        }
-
+        let vc = ColorPickerController()
         let navController = UINavigationController(rootViewController: vc)
         navController.modalPresentationStyle = UIModalPresentationStyle(sender.title!)!
         if navController.modalPresentationStyle == .popover {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9B2BBE322BAC3CF00251ECA /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2BBE222BAC3CF00251ECA /* ColorPickerController.swift */; };
 		C9BAC14C22B9425D001802D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BAC14B22B9425D001802D4 /* AppDelegate.swift */; };
 		C9BAC14E22B9425D001802D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BAC14D22B9425D001802D4 /* SceneDelegate.swift */; };
 		C9BAC15022B9425D001802D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BAC14F22B9425D001802D4 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9B2BBE222BAC3CF00251ECA /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		C9BAC14822B9425D001802D4 /* ViewControllerPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BAC14B22B9425D001802D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9BAC14D22B9425D001802D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				C9BAC14B22B9425D001802D4 /* AppDelegate.swift */,
 				C9BAC14D22B9425D001802D4 /* SceneDelegate.swift */,
 				C9BAC14F22B9425D001802D4 /* ViewController.swift */,
+				C9B2BBE222BAC3CF00251ECA /* ColorPickerController.swift */,
 				C9BAC15122B9425D001802D4 /* Main.storyboard */,
 				C9BAC15422B9425D001802D4 /* Assets.xcassets */,
 				C9BAC15622B9425D001802D4 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				C9BAC15022B9425D001802D4 /* ViewController.swift in Sources */,
 				C9BAC14C22B9425D001802D4 /* AppDelegate.swift in Sources */,
 				C9BAC14E22B9425D001802D4 /* SceneDelegate.swift in Sources */,
+				C9B2BBE322BAC3CF00251ECA /* ColorPickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
